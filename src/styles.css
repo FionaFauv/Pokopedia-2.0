@@ -1,3 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import 'tailwindcss';
+
+/* ── Tokens ──────────────────────────────── */
+:root {
+  --sky:       #c2eafc;
+  --sky-mid:   #e8f7fd;
+  --cream:     #fef9f0;
+  --lavender:  #c9a8e8;
+  --lav-light: #ece4f8;
+  --lav-mid:   #d8c8f0;
+  --mint:      #a8e2c4;
+  --green:     #6ec48a;
+  --green-dk:  #4a9466;
+  --brown:     #6b4c3b;
+  --brown-lt:  #a07860;
+  --text:      #5a3e32;
+  --text-dim:  #9a7a6e;
+  --white:     #fffdf8;
+  --shadow-soft: 0 4px 20px rgba(106,76,59,0.10);
+  --shadow-card: 0 6px 24px rgba(106,76,59,0.12);
+}
+
+/* ── Reset ───────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

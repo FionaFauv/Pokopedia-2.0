@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- En-tête avec gradient -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,16,18&height=200&section=header&text=POKOPEDIA&fontSize=48&fontAlignY=35&desc=Projet%20fait%20entre%20du%20Fans&descAlignY=55&descSize=18&animation=twinkling&fontColor=fff" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,16,18&height=200&section=header&text=POKOPEDIA&fontSize=48&fontAlignY=35&desc=Projet%20fait%20entre%20Fans&descAlignY=55&descSize=18&animation=twinkling&fontColor=fff" />
 
 <br>
 <p align="center">

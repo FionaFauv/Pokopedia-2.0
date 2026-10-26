@@ -1,0 +1,28 @@
+<section class="sections-area">
+  <div class="sections-header">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="deco-icon">
+      <path d="M12 7.5a4.5 4.5 0 1 1 4.5 4.5M12 7.5A4.5 4.5 0 1 0 7.5 12M12 7.5V9m-4.5 3H9"/><path d="M7.5 12a4.5 4.5 0 1 0 4.5 4.5M7.5 12H9"/><path d="M12 16.5a4.5 4.5 0 1 1-4.5-4.5M12 16.5V15"/><path d="M16.5 12a4.5 4.5 0 1 0-4.5-4.5M16.5 12H15"/>
+    </svg>
+    <h2 class="sections-title">Explorer le wiki</h2>
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="deco-icon">
+      <path d="M12 7.5a4.5 4.5 0 1 1 4.5 4.5M12 7.5A4.5 4.5 0 1 0 7.5 12M12 7.5V9m-4.5 3H9"/><path d="M7.5 12a4.5 4.5 0 1 0 4.5 4.5M7.5 12H9"/><path d="M12 16.5a4.5 4.5 0 1 1-4.5-4.5M12 16.5V15"/><path d="M16.5 12a4.5 4.5 0 1 0-4.5-4.5M16.5 12H15"/>
+    </svg>
+  </div>
+  <p class="sections-sub">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+  </p>
+  <div class="sections-grid">
+    @for (card of cards; track card.label; let i = $index) {
+      <a href="#" class="card" [style.--card-color]="card.color" [style.--card-stroke]="card.stroke" [style.--card-i]="i">
+        <div class="card-icon-wrap" [style.background]="card.color">
+          <span class="card-icon-svg" [innerHTML]="safeIcon(card.icon)"></span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-label">{{ card.label }}</h3>
+          <p class="card-desc">{{ card.desc }}</p>
+        </div>
+        <span class="card-arrow">&rsaquo;</span>
+      </a>
+    }
+  </div>
+</section>

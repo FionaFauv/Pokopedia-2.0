@@ -1,0 +1,130 @@
+<section class="hero">
+  <div class="hero-inner">
+    <!-- Nuages deco -->
+    <div class="sky-deco" aria-hidden="true">
+      <div class="cloud" style="top: 80px; left: 3%; transform: scale(0.9)">
+        <div class="cloud-body"></div>
+        <div class="cloud-bump cloud-bump-1"></div>
+        <div class="cloud-bump cloud-bump-2"></div>
+      </div>
+      <div class="cloud" style="top: 140px; left: 28%; transform: scale(0.6); opacity: 0.7">
+        <div class="cloud-body"></div>
+        <div class="cloud-bump cloud-bump-1"></div>
+        <div class="cloud-bump cloud-bump-2"></div>
+      </div>
+      <div class="cloud" style="top: 60px; right: 8%; transform: scale(1.1)">
+        <div class="cloud-body"></div>
+        <div class="cloud-bump cloud-bump-1"></div>
+        <div class="cloud-bump cloud-bump-2"></div>
+      </div>
+      <div class="cloud" style="top: 200px; right: 28%; transform: scale(0.7); opacity: 0.6">
+        <div class="cloud-body"></div>
+        <div class="cloud-bump cloud-bump-1"></div>
+        <div class="cloud-bump cloud-bump-2"></div>
+      </div>
+    </div>
+
+    <h1 class="hero-title">
+      Bienvenue sur notre<br />
+      <span class="hero-accent">Pokopedia</span>
+    </h1>
+
+    <p class="hero-sub">
+      Un petit site fait par des petits développeurs pour les grands fans de jeux vidéos.
+    </p>
+
+    <!-- Barre de recherche -->
+    <div class="search-wrap">
+      <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
+      </svg>
+      <input
+        class="search-input"
+        type="text"
+        placeholder="Habitat, pokemon, sanctuaire..."
+        [value]="search()"
+        (input)="search.set($any($event.target).value)"
+      />
+      @if (search()) {
+        <button class="search-clear" (click)="clearSearch()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 6 6 18"/><path d="m6 6 12 12"/>
+          </svg>
+        </button>
+      }
+      <button class="search-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
+        </svg>
+        Rechercher
+      </button>
+    </div>
+
+    <div class="hero-stats">
+      <span class="stat-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M11 20A7 7 0 0 1 9.8 6.9C15.5 4.9 17 3.5 19 1c1 2 2 4.5 2 8 0 5.5-4.78 10-10 11Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+        </svg>
+        <strong>300+</strong> especes
+      </span>
+      <span class="stat-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m8 3 4 8 5-5 5 15H2L8 3z"/>
+        </svg>
+        <strong>12</strong> biomes
+      </span>
+      <span class="stat-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/>
+        </svg>
+        <strong>4 800+</strong> articles
+      </span>
+    </div>
+
+    <!-- Icones deco flottantes -->
+    <div class="hero-floating-icons" aria-hidden="true">
+      <span class="fi fi-1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M17 10.5V6a1 1 0 0 0-1-1h-1a1 1 0 0 0-1 1v1.67"/><path d="M13 7.67V3a1 1 0 0 0-1-1h-1a1 1 0 0 0-1 1v5.67"/><path d="M9 8.67V6a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v4"/><path d="M5 10v4a7.001 7.001 0 0 0 7 7h0a7 7 0 0 0 7-7v-4"/>
+        </svg>
+      </span>
+      <span class="fi fi-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M16 7h.01"/><path d="M3.4 18H12a8 8 0 0 0 8-8V7a4 4 0 0 0-7.28-2.3L2 20"/>
+        </svg>
+      </span>
+      <span class="fi fi-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M13 16a3 3 0 0 1 2.24 1"/><path d="M18 12h.01"/><path d="M18 21h-8a4 4 0 0 1-4-4 7 7 0 0 1 7-7h.2L9.6 6.4a1.93 1.93 0 1 1 2.8-2.8L16.75 8H18a4 4 0 0 1 4 4v5a4 4 0 0 1-4 4Z"/>
+        </svg>
+      </span>
+      <span class="fi fi-4">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 7.5a4.5 4.5 0 1 1 4.5 4.5M12 7.5A4.5 4.5 0 1 0 7.5 12M12 7.5V9m-4.5 3H9"/><path d="M7.5 12a4.5 4.5 0 1 0 4.5 4.5M7.5 12H9"/><path d="M12 16.5a4.5 4.5 0 1 1-4.5-4.5M12 16.5V15"/><path d="M16.5 12a4.5 4.5 0 1 0-4.5-4.5M16.5 12H15"/>
+        </svg>
+      </span>
+      <span class="fi fi-5">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="M20 12h2"/><path d="m19.07 4.93-1.41 1.41"/><path d="M15.947 12.65a4 4 0 0 0-5.925-4.128"/><path d="M13 22H7a5 5 0 1 1 4.9-6H13a3 3 0 0 1 0 6Z"/>
+        </svg>
+      </span>
+      <span class="fi fi-6">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 11a2 2 0 1 1-4 0 4 4 0 0 1 8 0 6 6 0 0 1-12 0 8 8 0 0 1 16 0 10 10 0 1 1-20 0 12 12 0 0 1 24 0"/>
+        </svg>
+      </span>
+      <span class="fi fi-7">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12.67 19a2 2 0 0 0 1.416-.588l6.154-6.172a6 6 0 0 0-8.49-8.49L5.586 9.914A2 2 0 0 0 5 11.328V18a1 1 0 0 0 1 1z"/>
+        </svg>
+      </span>
+    </div>
+  </div>
+
+  <!-- Herbe -->
+  <div class="grass-row" aria-hidden="true">
+    @for (i of [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23]; track i) {
+      <div class="grass-blade" [style.--gi]="i"></div>
+    }
+  </div>
+</section>
