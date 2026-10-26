@@ -1,0 +1,27 @@
+<header class="header">
+  <div class="awning" aria-hidden="true">
+    @for (i of [0,1,2,3,4,5,6,7,8,9,10,11,12,13]; track i) {
+      <div [class]="'awning-scallop ' + (i % 2 === 0 ? 'scallop-a' : 'scallop-b')"></div>
+    }
+  </div>
+  <div class="header-inner">
+    <a class="logo" routerLink="/">
+      <div class="logo-icon-wrap">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M11 20A7 7 0 0 1 9.8 6.9C15.5 4.9 17 3.5 19 1c1 2 2 4.5 2 8 0 5.5-4.78 10-10 11Z"/>
+          <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+        </svg>
+      </div>
+      <span class="logo-text">Pokopedia</span>
+      <span class="logo-badge">Wiki</span>
+    </a>
+    <nav class="top-nav">
+      @for (item of navItems; track item.label) {
+        <a [routerLink]="item.route" routerLinkActive="nav-pill-active" class="nav-pill">
+        
+          {{ item.label }}
+        </a>
+      }
+    </nav>
+  </div>
+</header>

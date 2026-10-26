@@ -1,0 +1,107 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--white);
+  box-shadow: var(--shadow-soft);
+  border-radius: 0 0 24px 24px;
+}
+
+/* Awning scallops */
+.awning {
+  display: flex;
+  height: 18px;
+  overflow: hidden;
+}
+
+.awning-scallop {
+  flex: 1;
+  border-radius: 0 0 50% 50%;
+}
+
+.scallop-a { background: var(--green); }
+.scallop-b { background: var(--mint); }
+
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 14px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.logo-icon-wrap {
+  width: 34px;
+  height: 34px;
+  background: var(--mint);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--green-dk);
+  flex-shrink: 0;
+}
+
+.logo-text {
+  font-family: 'Fredoka One', cursive;
+  font-size: 24px;
+  color: var(--green-dk);
+  letter-spacing: 0.5px;
+}
+
+.logo-badge {
+  background: var(--lavender);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 2px 10px;
+  border-radius: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.top-nav {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.nav-pill {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  transition: all 0.2s;
+}
+
+.nav-pill:hover {
+  background: var(--lav-light);
+  border-color: var(--lav-mid);
+  color: var(--brown);
+}
+
+.nav-pill-active {
+  background: var(--lavender);
+  color: #fff;
+  border-color: var(--lavender);
+}
+
+@media (max-width: 860px) {
+  .top-nav { display: flex; }
+}

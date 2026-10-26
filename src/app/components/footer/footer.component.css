@@ -1,0 +1,26 @@
+.footer {
+  background: var(--brown);
+  padding: 28px 32px;
+  text-align: center;
+  color: rgba(255,255,255,0.7);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  color: var(--mint);
+  margin-bottom: 10px;
+}
+
+.footer-sub {
+  margin-top: 6px;
+  color: var(--lavender);
+  font-size: 13px;
+}
