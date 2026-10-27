@@ -4,6 +4,7 @@ import { RouterLink } from '@angular/router';
 import { HeaderComponent } from '../../components/header/header.component';
 import { HeroComponent } from '../../components/home/hero/hero.component';
 import { FooterComponent } from '../../components/footer/footer.component';
+import { FaceSnap } from '../../components/face-snap/face-snap.component';
 
 @Component({
   selector: 'app-home',
@@ -11,7 +12,8 @@ import { FooterComponent } from '../../components/footer/footer.component';
     HeaderComponent,
     HeroComponent,
     FooterComponent,
-  ],
+    FaceSnap
+],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })

@@ -227,6 +227,23 @@
   opacity: 1;
 }
 
+.hero-bottom-border {
+  position: relative;
+  height: 40px;
+  overflow: hidden;
+  margin-top: -20px;
+}
+
+.hero-bottom-border-inner {
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  right: 0;
+  height: 40%;
+  background: #4a9466;
+  border-radius: 5px;
+}
+
 @keyframes sway {
   from { transform: rotate(-4deg); }
   to   { transform: rotate(4deg); }
