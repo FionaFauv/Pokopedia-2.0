@@ -22,11 +22,10 @@
   --shadow-card: 0 6px 24px rgba(106,76,59,0.12);
 }
 
-/* ── Reset ───────────────────────────────── */
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
+@layer base {
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+} 
