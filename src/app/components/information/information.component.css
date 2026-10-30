@@ -1,0 +1,12 @@
+.font-section {
+    width: 100%;
+    display: flex;
+}
+
+.bg-circle{
+    background: var(--lav-mid);
+}
+.text-title {
+    font-family: var(--text-title);
+    font-size: 26px;
+}

@@ -106,6 +106,13 @@ ng e2e
 ```
 ---
 
+## Installation NestJS
+
+```bash
+npm install @nestjs/schedule rss-parser
+```
+
+---
 ## Ressources
 
 <div align="center">

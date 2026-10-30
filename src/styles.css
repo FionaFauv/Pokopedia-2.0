@@ -20,6 +20,15 @@
   --white:     #fffdf8;
   --shadow-soft: 0 4px 20px rgba(106,76,59,0.10);
   --shadow-card: 0 6px 24px rgba(106,76,59,0.12);
+  --text-title : 'Fredoka One', cursive;
+}
+
+.p-style{
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text-dim);
+  margin-bottom: 36px;
+  font-weight: 600;
 }
 
 @layer base {
